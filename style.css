@@ -1,0 +1,127 @@
+
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --white: hsl(0, 0%, 100%);
+  --Very-blue: hsl(217, 19%, 35%);
+  --Very-dark-blue: hsl(219, 29%, 14%);
+  --font: 'Barlow Semi Condensed', sans-serif;
+}
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+
+}
+body{
+background-color: var(--white);
+
+
+}
+.container{
+  /* position: absolute; */
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;justify-content:center;
+  align-items: center;
+}
+main{
+  height: 95%;
+  width: 90%;
+  border:1px solid green;
+  position: relative;  background-color:lightblue;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
+  display: grid;
+  grid-gap:30px;
+
+ grid-template-areas:'o o s t'
+                    'f five five t'
+
+}
+section{
+    border:1px solid red;
+}
+.one{
+background-color: var(--Moderate-violet);
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+border-radius: 10px;
+grid-area: o;
+}
+.profile{
+  display: flex;
+
+}
+.profile, .para, .head{
+  border: 1px solid red;    margin: 10px 0px 10px 30px;
+
+}
+.pro, .para, .head{
+  border: 1px solid red;    margin: 10px 0px 10px 30px;
+
+}
+/* figure{
+  background-color:hsl(0, 0%, 81% );
+  opacity: 50%;
+  border-radius: 50%;
+  height: 44px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+} */
+.profile img{
+  border-radius: 50%;
+  height: 35px;
+  color:hsl(0, 0%, 81% );
+  border:3px solid hsla(0,0%, 81%, 0.5);
+}
+.name{
+  display: inline-block;
+  font-size: 13px;
+ line-height: -50px;
+ height:40px;
+}
+.name h3{
+  padding:0px 0px 4px 20px;  color: hsl(210, 46%, 95%);
+}
+.head{
+    color: hsl(210, 46%, 95%);
+      font-size: 18px;
+      text-align: left;
+      padding-right: 10px;
+}
+.name h4{
+  padding:0px 0px 0px 20px;
+  color:hsl(0, 0%, 81% );
+
+  opacity: 50%;
+}
+.para p{
+  color:hsl(0, 0%, 81% );
+  opacity: 70%;
+  font-size: 13px;  padding-right: 20px;
+  font-weight: 200;text-align: left;
+}
+.second{
+  background-color: var(--Very-blue);
+  grid-area: s;
+
+}
+.third{
+grid-area: t;
+}
+.fourth{
+grid-area: f;
+  background-color: var(  --Very-dark-blue);
+}
+
+.five{
+grid-area: five;
+}
